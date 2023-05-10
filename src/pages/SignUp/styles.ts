@@ -42,6 +42,13 @@ export const Form = styled.form<HTMLAttributes<HTMLFormElement>>`
   > a {
     margin-top: 12.4rem;
     color: ${({ theme }) => theme.COLORS.PINK_800};
+    display: flex;
+    align-items: center;
+
+    > svg {
+      font-size: 1.6rem;
+      margin-right: .8rem;
+    };
   };
 
   @media(max-width: 590px) {
