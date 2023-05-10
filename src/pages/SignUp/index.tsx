@@ -27,7 +27,7 @@ const SignUp: React.FC = () => {
           icon={FiLock}
         />
         <Button>Entrar</Button>
-        <Link to="/">Criar conta</Link>
+        <Link to="/">Voltar para o login</Link>
       </Form>
       <Background />
     </Container>

@@ -24,7 +24,7 @@ const SignIn: React.FC = () => {
         <Button>Entrar</Button>
         <Link to="/register">
           <FiArrowLeft />
-          Voltar para o login
+            Criar conta
         </Link>
       </Form>
       <Background />
