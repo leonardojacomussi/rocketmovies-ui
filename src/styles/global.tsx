@@ -35,4 +35,20 @@ export default createGlobalStyle`
   button:hover, a:hover {
     filter: brightness(.9);
   };
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  };
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.COLORS.PINK_900};
+  };
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.COLORS.PINK_800};
+    border-radius: 8px;
+  };
 `;
