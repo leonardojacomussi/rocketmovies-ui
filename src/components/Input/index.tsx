@@ -6,9 +6,9 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   icon?: IconType,
 };
 
-const Input: FC<InputProps> = ({ icon: Icon, ...props }): JSX.Element => {
+const Input: FC<InputProps> = ({ icon: Icon, className, ...props }): JSX.Element => {
   return (
-    <Container>
+    <Container className={className ? className : ""}>
       {Icon && <Icon />}
       <input {...props} />
     </Container>

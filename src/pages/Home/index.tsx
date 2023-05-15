@@ -4,14 +4,17 @@ import Header from "../../components/Header";
 import Button from "../../components/Button";
 import { FiPlus } from "react-icons/fi";
 import CardMovie from "../../components/CardMovie";
+import { useNavigate, NavigateFunction } from "react-router-dom";
 
 const Home: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
+  const navigate: NavigateFunction = useNavigate();
+
   return (
     <Container {...props}>
       <Header />
       <Top>
         <h1>Meus filmes</h1>
-        <Button className="addFilm">
+        <Button className="addFilm" onClick={() => navigate("/new")}>
           <FiPlus />
           Adicionar filme
         </Button>
