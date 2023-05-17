@@ -1,9 +1,12 @@
 import { FC, HTMLAttributes } from "react";
 import { Container, Logo, Search, Profile } from "./styles";
 import { FiSearch } from "react-icons/fi";
+import { useNavigate, NavigateFunction } from "react-router-dom";
 import Input from "../Input";
 
 const Header: FC<HTMLAttributes<HTMLElement>> = (props) => {
+  const navigate: NavigateFunction = useNavigate();
+
   return (
     <Container {...props}>
       <Logo>RocketMovies</Logo>
@@ -24,6 +27,7 @@ const Header: FC<HTMLAttributes<HTMLElement>> = (props) => {
           className="avatar"
           aria-label="Acessar perfil"
           title="Acessar perfil"
+          onClick={() => navigate("/perfil")}
         >
           <img
             src="https://github.com/leonardojacomussi.png"
