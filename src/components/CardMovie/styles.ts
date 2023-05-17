@@ -13,20 +13,19 @@ export const Container = styled.div<HTMLAttributes<HTMLDivElement>>`
   padding: 3.2rem;
   border-radius: 1.6rem;
   background-color: ${({ theme }) => theme.COLORS.PINK_900};
+
+  > a {
+    text-decoration: none;
+    color: inherit;
+  };
 `;
 
 export const Header = styled.header<HTMLAttributes<HTMLElement>>`
   width: 100%;
   height: auto;
-
-  > span {
-    margin-top: 8px;
-    color: ${({ theme }) => theme.COLORS.PINK_800};
-
-    > svg {
-      margin-right: .6rem;
-    };
-  };
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
 `;
 
 export const Body = styled.div<HTMLAttributes<HTMLDivElement>>`

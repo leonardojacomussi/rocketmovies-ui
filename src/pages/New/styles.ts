@@ -36,7 +36,7 @@ export const Form = styled.form<HTMLAttributes<HTMLFormElement>>`
     "movie-title movie-rating"
     "movie-description movie-description"
     "tag-title ."
-    "tags-container ."
+    "tags-container tags-container"
     "delete submit";
   margin: 4rem 0;
   gap: 4rem;
@@ -69,6 +69,16 @@ export const Form = styled.form<HTMLAttributes<HTMLFormElement>>`
 
   > .tags-container {
     grid-area: tags-container;
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: .8rem;
+
+    background-color: ${({ theme }) => theme.COLORS.BLACK_900};
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.4rem;
   };
 
   > .delete {

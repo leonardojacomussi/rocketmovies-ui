@@ -6,6 +6,7 @@ import Input from "../../components/Input";
 import ButtonText from "../../components/ButtonText";
 import TextArea from "../../components/TextArea";
 import { FiArrowLeft } from "react-icons/fi";
+import NewTag from "../../components/NewTag";
 import { useNavigate, NavigateFunction } from "react-router-dom";
 
 const New: FC<HTMLAttributes<HTMLElement>> = () => {
@@ -48,7 +49,9 @@ const New: FC<HTMLAttributes<HTMLElement>> = () => {
           />
           <h2 className="tag-title">Marcadores</h2>
           <div className="tags-container">
-
+            <NewTag value={"React.js"} isNew={false}/>
+            <NewTag value={"Node.js"} isNew={false}/>
+            <NewTag isNew placeholder="Novo marcador"/>
           </div>
           <Button
             type="button"
