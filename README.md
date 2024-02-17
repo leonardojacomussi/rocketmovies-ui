@@ -30,7 +30,7 @@ The RocketMovies app is the capstone project for Rocketseat Explorer's program o
 
 <h2 id="live">👁️‍🗨️ Live</h2>
 
-This project is hosted at Github Pages of this repository by the link <a href="https://leonardojacomussi.github.io/rocketmovies/" target="_blank">https://leonardojacomussi.github.io/rocketmovies/</a>
+This project is hosted at Github Pages of this repository by the link <a href="https://leonardojacomussi.github.io/rocketmovies-ui/" target="_blank">https://leonardojacomussi.github.io/rocketmovies-ui/</a>
 
 <h2 id="technologies">🚀 Technologies</h2>
 

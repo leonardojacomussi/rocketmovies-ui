@@ -1,9 +1,9 @@
 {
-  "name": "rocketmovies",
+  "name": "rocketmovies-ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://leonardojacomussi.github.io/rocketmovies",
+  "homepage": "https://leonardojacomussi.github.io/rocketmovies-ui",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
