@@ -5,7 +5,7 @@ import AppRoutes from "./app.routes";
 
 export default function Routes() {
   return (
-    <BrowserRouter basename="/rocketmovies">
+    <BrowserRouter basename="/rocketmovies-ui">
       <AppRoutes />
     </BrowserRouter>
   );
