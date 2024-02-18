@@ -5,7 +5,7 @@ export const Container = styled.button<ButtonTextProps>`
   width: fit-content;
   height: fit-content;
   background: none;
-  color: ${({ theme, isActive }) => isActive ? theme.COLORS.PINK_800 : theme.COLORS.GRAY_800};
+  color: ${({ theme, $isActive }) => $isActive ? theme.COLORS.PINK_800 : theme.COLORS.GRAY_800};
 
   border: none;
   font-size: 1.6rem;

@@ -6,7 +6,7 @@ const ButtonText: FC<ButtonTextProps> = ({ children, isActive, ...props }) => {
   return (
     <Container
       type="button"
-      isActive={isActive}
+      $isActive={isActive}
       {...props}
     >
       {children}
