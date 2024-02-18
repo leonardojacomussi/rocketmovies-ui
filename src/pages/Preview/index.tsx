@@ -16,7 +16,7 @@ const Preview: FC<HTMLAttributes<HTMLElement>> = () => {
       <Content>
         <Top>
           <ButtonText
-            isActive
+            $isActive
             className="back"
             onClick={() => navigate("/")}
           >

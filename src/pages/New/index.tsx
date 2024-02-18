@@ -18,7 +18,7 @@ const New: FC<HTMLAttributes<HTMLElement>> = () => {
       <Content>
         <Form onSubmit={(event) => event.preventDefault()}>
           <ButtonText
-            isActive
+            $isActive
             className="back"
             onClick={() => navigate("/")}
           >
