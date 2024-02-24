@@ -14,7 +14,6 @@ export const Container = styled.div<HTMLAttributes<HTMLDivElement>>`
   justify-content: start;
 
   > main {
-    height: 100%;
     grid-area: main;
     padding: 0 12.3rem;
     overflow-y: auto;

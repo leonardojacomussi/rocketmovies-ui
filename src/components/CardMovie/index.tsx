@@ -5,28 +5,39 @@ import Tag from "../Tag";
 import Stars from "../Stars";
 import { truncate } from "../../utils/strings";
 
-interface CardMovieProps extends HTMLAttributes<HTMLDivElement> {
-  title: string;
-  description: string;
-  rate: 1 | 2 | 3 | 4 | 5;
-  tags: Array<string>;
+type MovieProps = {
+  id: number,
+  title: string,
+  description: string,
+  rating: number,
+  user_id: number,
+  created_at: string,
+  updated_at: string,
+  tags: {
+    id: number,
+    name: string,
+    movie_id: number,
+    user_id: number
+  }[]
 };
 
-const CardMovie: FC<CardMovieProps> = ({ title, description, rate, tags, ...props }): JSX.Element => {
+interface CardMovieProps extends HTMLAttributes<HTMLDivElement> {
+  movie: MovieProps;
+};
+
+const CardMovie: FC<CardMovieProps> = ({ movie, ...props }): JSX.Element => {
   return (
-    <Container {...props}>
-      <Link to={`movie/${title}`}>
-        <Header>
-          <h2>{title}</h2>
-          <Stars rate={rate} />
-        </Header>
-        <Body>
-          <p>{truncate(description, 300)}</p>
-        </Body>
-        <Footer>
-          {tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
-        </Footer>
-      </Link>
+    <Container to={`movie/${movie.id}`}>
+      <Header>
+        <h2>{movie.title}</h2>
+        <Stars rate={movie.rating} />
+      </Header>
+      <Body>
+        <p>{truncate(movie.description, 300)}</p>
+      </Body>
+      <Footer>
+        {movie.tags.map(tag => <Tag key={tag.id+tag.name}>{tag.name}</Tag>)}
+      </Footer>
     </Container>
   );
 };

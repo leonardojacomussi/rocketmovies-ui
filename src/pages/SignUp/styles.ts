@@ -39,7 +39,7 @@ export const Form = styled.form<HTMLAttributes<HTMLFormElement>>`
     color: ${({ theme }) => theme.COLORS.WHITE_900};
   };
 
-  > a {
+  > button.back {
     margin-top: 12.4rem;
     color: ${({ theme }) => theme.COLORS.PINK_800};
     display: flex;
@@ -61,7 +61,7 @@ export const Form = styled.form<HTMLAttributes<HTMLFormElement>>`
       font-size: 3.8rem;
     };
 
-    > a {
+    > button.back {
       margin-top: 5.4rem;
     };
   };

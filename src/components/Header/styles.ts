@@ -66,7 +66,7 @@ export const Profile = styled.div<HTMLAttributes<HTMLDivElement>>`
     background: transparent;
     border: 1px solid ${({ theme }) => theme.COLORS.GRAY_900};
 
-    > img {
+    > img, svg {
       width: 100%;
       height: 100%;
       border-radius: 50%;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { HTMLAttributes } from "react";
+import { TextareaHTMLAttributes } from "react";
 
-export const Container = styled.textarea<HTMLAttributes<HTMLTextAreaElement>>`
+export const Container = styled.textarea<TextareaHTMLAttributes<HTMLTextAreaElement>>`
   width: 100%;
   height: 15rem;
 

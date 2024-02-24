@@ -61,12 +61,23 @@ export const Top = styled.div<HTMLAttributes<HTMLElement>>`
       border-radius: 50%;
       border: 0.5px solid ${({ theme }) => theme.COLORS.GRAY_900};
 
-      > img {
+      > img, svg {
         width: 1.6rem;
         height: 1.6rem;
         border-radius: 50%;
         border: 0.5px solid ${({ theme }) => theme.COLORS.GRAY_900};
       };
+    };
+  };
+
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+
+    > button {
+      width: fit-content;
     };
   };
 `;

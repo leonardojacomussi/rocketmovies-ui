@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { HTMLAttributes } from "react";
+import { Link } from "react-router-dom";
 
-export const Container = styled.div<HTMLAttributes<HTMLDivElement>>`
+export const Container = styled(Link)`
   width: 100%;
   height: auto;
 
@@ -14,10 +15,8 @@ export const Container = styled.div<HTMLAttributes<HTMLDivElement>>`
   border-radius: 1.6rem;
   background-color: ${({ theme }) => theme.COLORS.PINK_900};
 
-  > a {
-    text-decoration: none;
-    color: inherit;
-  };
+  text-decoration: none;
+  color: inherit;
 `;
 
 export const Header = styled.header<HTMLAttributes<HTMLElement>>`

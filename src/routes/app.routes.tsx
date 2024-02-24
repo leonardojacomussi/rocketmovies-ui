@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import New from "../pages/New";
 import Preview from "../pages/Preview";
@@ -10,7 +10,8 @@ const AppRoutes: React.FC = () => {
       <Route path="/" element={<Home />} />
       <Route path="/perfil" element={<Profile />} />
       <Route path="/new" element={<New />} />
-      <Route path="/movie/:title" element={<Preview />} />
+      <Route path="/movie/:id" element={<Preview />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };

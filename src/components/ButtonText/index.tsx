@@ -14,4 +14,8 @@ const ButtonText: FC<ButtonTextProps> = ({ children, $isActive, ...props }) => {
   );
 };
 
+ButtonText.defaultProps = {
+  $isActive: false,
+};
+
 export default ButtonText;

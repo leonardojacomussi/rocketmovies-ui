@@ -3,7 +3,7 @@ import { FC, HTMLAttributes } from "react";
 import { Container } from "./styles";
 
 interface StarsProps extends HTMLAttributes<HTMLDivElement> {
-  rate: 1 | 2 | 3 | 4 | 5;
+  rate: number;
 };
 
 const Stars: FC<StarsProps> = ({rate, ...props}): JSX.Element => {

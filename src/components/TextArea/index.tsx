@@ -1,7 +1,7 @@
 import { Container } from "./styles";
-import { FC, HTMLAttributes } from "react";
+import { FC, TextareaHTMLAttributes } from "react";
 
-const TextArea: FC<HTMLAttributes<HTMLTextAreaElement>> = (props) => {
+const TextArea: FC<TextareaHTMLAttributes<HTMLTextAreaElement>> = (props) => {
   return <Container {...props}/>;
 };
 
