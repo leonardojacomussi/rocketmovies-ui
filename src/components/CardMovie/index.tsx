@@ -1,6 +1,6 @@
 import { Container, Header, Body, Footer } from "./styles";
 import { FC, HTMLAttributes } from "react";
-import { Link } from "react-router-dom";
+import { LinkProps } from "react-router-dom";
 import Tag from "../Tag";
 import Stars from "../Stars";
 import { truncate } from "../../utils/strings";
@@ -21,11 +21,11 @@ type MovieProps = {
   }[]
 };
 
-interface CardMovieProps extends HTMLAttributes<HTMLDivElement> {
+interface CardMovieProps extends HTMLAttributes<LinkProps> {
   movie: MovieProps;
 };
 
-const CardMovie: FC<CardMovieProps> = ({ movie, ...props }): JSX.Element => {
+const CardMovie: FC<CardMovieProps> = ({ movie }): JSX.Element => {
   return (
     <Container to={`movie/${movie.id}`}>
       <Header>
